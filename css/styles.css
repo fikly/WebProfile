@@ -1,0 +1,138 @@
+@font-face{
+    font-family: calibre-medium;
+    src: url(../fonts/CalibreApp-Medium.ttf);
+}
+@font-face{
+    font-family: walkway;
+    src: url(../fonts/Walkway.ttf);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #31A697 !important;
+}
+body{
+    background-color:#f7f7f7;
+    position:relative;
+}
+.logo{
+    text-align: center;
+    padding-top: 50px;
+}
+.logo .logo-img{
+    background-image: url(../images/logo.png);
+    background-size: auto  100%;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.nav-box{
+    width:50px;
+    border:2px solid #38B8A7;
+    position:fixed;
+    right:30px;
+    top:20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    z-index: 3;
+}
+.nav-box .remove-ovelay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    top: 0;
+    z-index: 5;
+    display: none;
+}
+.nav-box .dislay-ovelay{
+    position: relative;
+    height: 100%;
+    padding: 10px 0px;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+    display: block;
+}
+.strip-nav{
+    height: 2px;
+    width: 50%;
+    background-color: #38B8A7;
+    margin: 0px auto;
+    transition: all .5s;
+}
+#nav-1{
+    margin-bottom: 5px;
+}
+.nav-2-left{
+    position: absolute;
+    left: 25%;
+    top:50%;
+    opacity: 0;
+}
+#nav-3{
+    margin-top: 5px;
+}
+.open #nav-2{
+    transform: rotate(130deg);
+    background-color: #ffffff;
+}
+.open .nav-2-left{
+    transform: rotate(-130deg) !important;
+    opacity: 1;
+}
+.open #nav-1, .open #nav-3{
+    opacity: 0;
+}
+.ovelay{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    overflow-y: auto;
+    background-color: rgba(56, 184, 167, 0.77);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+.navbar-menu{
+    list-style: none;
+    padding: 0;
+    padding: 120px 0px;
+}
+.navbar-menu li{
+    text-align: center;
+    margin-top: 65px;
+}
+.navbar-menu li:first-child{
+    margin-top: 0px;
+}
+.navbar-menu li span{
+    font-size: 32px;
+    color:#ffffff;
+    text-shadow: 1px 1px 5px #666666;
+    transition: all .8s;
+    cursor: pointer;
+    font-family: walkway;
+    opacity: 0;
+}
+.menu-1{transition-delay: .3s !important;}
+.menu-2{transition-delay: .4s !important;}
+.menu-3{transition-delay: .5s !important;}
+.menu-4{transition-delay: .6s !important;}
+.menu-5{transition-delay: .7s !important;}
+.open li span{
+    transform: rotateY(360deg);
+    opacity: 1;
+}
+.btn-socmed{
+    background-color: #0a6f62 !important;
+    color: #ffffff !important;
+    margin: 0px 5px !important;
+}
+.btn-socmed:hover{
+    background-color: #38b8a7 !important;
+}
