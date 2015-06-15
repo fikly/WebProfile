@@ -6,38 +6,51 @@
     font-family: walkway;
     src: url(../fonts/Walkway.ttf);
 }
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #31A697 !important;
 }
+.no-pad{
+    padding: 0px;
+}
+.no-mar{
+    margin: 0px;
+}
+.container.no-mar{
+    width: 100%;
+}
 body{
-    background-color:#f7f7f7;
-    position:relative;
+    background-color: #ffffff;
 }
 .logo{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .logo .logo-img{
     background-image: url(../images/logo.png);
     background-size: auto  100%;
-    height: 160px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .nav-box{
-    width:50px;
-    border:2px solid #38B8A7;
+    width:40px;
     position:fixed;
-    right:30px;
+    right:0px;
     top:20px;
     border-radius: 5px;
     cursor: pointer;
     transition: all .5s;
     z-index: 3;
+    background-color: #ffffff;
+    border-radius: 100px;
 }
 .nav-box .remove-ovelay{
     position: absolute;
@@ -58,8 +71,9 @@ body{
     display: block;
 }
 .strip-nav{
-    height: 2px;
+    height: 3px;
     width: 50%;
+    border-radius: 3px;
     background-color: #38B8A7;
     margin: 0px auto;
     transition: all .5s;
@@ -70,8 +84,11 @@ body{
 .nav-2-left{
     position: absolute;
     left: 25%;
-    top:50%;
+    top:46%;
     opacity: 0;
+}
+.nav-box.open{
+    background-color: transparent;
 }
 #nav-3{
     margin-top: 5px;
@@ -92,7 +109,7 @@ body{
     left: 0px;
     top:0px;
     overflow-y: auto;
-    background-color: rgba(56, 184, 167, 0.77);
+    background-color: rgba(56, 184, 167, 0.9);
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -131,8 +148,61 @@ body{
 .btn-socmed{
     background-color: #0a6f62 !important;
     color: #ffffff !important;
-    margin: 0px 5px !important;
+    margin: 0px 10px !important;
 }
 .btn-socmed:hover{
     background-color: #38b8a7 !important;
+}
+.home{
+    height: 400px;
+    background-color: #ffffff;
+}
+.skill{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background-color: #373737;
+    text-align: center;
+    color: #ffffff;
+}
+h3{
+    font-family: roboto;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #333333;
+    margin-bottom: 30px;
+}
+.skill h3{
+    margin-bottom: 50px;
+}
+.box-skill h3{
+    margin : 0px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.box-skill h4{
+    font-family: calibre;
+    font-size: 16px;
+}
+.box-skill img{
+    height: 50px;
+    width: auto;
+}
+.about{
+    background-image: url(../images/head.jpg);
+    height: 400px;
+    background-size: 100% auto;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding-top: 20px;
+    text-align: center;
+}
+.about img{
+    height: 70%;
+}
+@media(min-width : 992px){
+    .nav-box{
+        right:30px;
+    }
 }

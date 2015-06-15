@@ -14,10 +14,4 @@ $(function () {
         $('.ovelay').addClass('animated hinge');
         $('.navbar-menu').toggleClass('open');
     });
-    $(window).load(function () {
-        $('body').toggleClass('animated bounce');
-    });
-    $(window).hover(function () {
-        $('body').removeClass('animated bounce');
-    });
 });
