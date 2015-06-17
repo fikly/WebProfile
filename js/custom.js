@@ -1,4 +1,5 @@
 $(function () {
+    $('.txt-about').textillate({in: {effect: 'flipInY'}});
 
     $('.dislay-ovelay').click(function () {
         $('.nav-box').toggleClass('open');
@@ -50,13 +51,21 @@ $(function () {
         $('#fikly').hide();
     });
     jQuery(document).ready(function () {
-        jQuery('.box-skill').addClass("hidden").viewportChecker({
+        jQuery('.skill-center').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated zoomIn',
+            offset: 100
+        });
+        jQuery('.skill-left').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated fadeInLeft',
-            offset: 200
+            offset: 100
+        });
+        jQuery('.skill-right').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeInRight',
+            offset: 100
         });
         jQuery('.box-portofolio').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeIn',
-            offset: 170
+            classToAdd: 'visible animated fadeInDown',
+            offset: 100
         });
     });
 });
